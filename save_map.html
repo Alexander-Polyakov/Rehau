@@ -1,0 +1,2433 @@
+ <script type="text/javascript">
+					
+				</script>
+			  <script>
+			   function initialize() {
+						var secheltLoc = new google.maps.LatLng(55.821118, 37.641467); 
+						var secheltLoc2 = new google.maps.LatLng(55.804940, 37.515516);
+						var secheltLoc3 = new google.maps.LatLng(55.638739, 37.770391); 
+						var secheltLoc4 = new google.maps.LatLng(55.715628, 37.817604); 
+						var secheltLoc5 = new google.maps.LatLng(55.897870, 37.587080);
+						var secheltLoc6 = new google.maps.LatLng(55.678766, 37.695524);
+						var secheltLoc7 = new google.maps.LatLng(55.675706, 37.761615);
+						var secheltLoc8 = new google.maps.LatLng(55.779577, 37.601030); 
+						var secheltLoc9 = new google.maps.LatLng(55.624989, 37.490779);
+						var secheltLoc10 = new google.maps.LatLng(55.692530, 37.534560);
+						var secheltLoc11 = new google.maps.LatLng(55.541406, 37.570613);
+						var secheltLoc12 = new google.maps.LatLng(55.740614, 37.416907);
+						var secheltLoc13 = new google.maps.LatLng(55.826509, 37.437056);
+						var secheltLoc14 = new google.maps.LatLng(55.809301, 37.798585);
+						var secheltLoc15 = new google.maps.LatLng(55.887213, 37.661439);
+						var secheltLoc16 = new google.maps.LatLng(55.751700, 37.816643);
+						var secheltLoc17 = new google.maps.LatLng(55.663765, 37.483109);
+						var secheltLoc18 = new google.maps.LatLng(55.649033, 37.532554);
+						var secheltLoc19 = new google.maps.LatLng(55.686440, 37.897467);
+						var secheltLoc20 = new google.maps.LatLng(55.549589, 37.699312);
+						var secheltLoc21 = new google.maps.LatLng(55.626316, 37.850112);
+						var secheltLoc22 = new google.maps.LatLng(55.946401, 37.499461);
+						var secheltLoc23 = new google.maps.LatLng(55.360516, 37.518469);
+						var secheltLoc24 = new google.maps.LatLng(55.932243, 37.854401);
+						var secheltLoc25 = new google.maps.LatLng(55.826175, 37.325718);
+						var secheltLoc26 = new google.maps.LatLng(55.686100, 37.897761);
+						var secheltLoc27 = new google.maps.LatLng(55.919483, 37.764789);
+						var secheltLoc28 = new google.maps.LatLng(55.673103, 37.281480);
+						var secheltLoc29 = new google.maps.LatLng(55.430702, 37.544619);
+						var secheltLoc30 = new google.maps.LatLng(55.568452, 38.221083);
+						var secheltLoc31 = new google.maps.LatLng(55.761684, 37.861068);
+						
+						var secheltLoc32 = new google.maps.LatLng(55.894803, 37.444634);
+
+						
+						
+						var href_page = $(location).attr("href");
+						var reg1=/#vdnh/i;
+						var reg2=/#sokol/i;
+						var reg3=/#brateevo/i;
+						var reg4=/#vyhino/i;
+						var reg5=/#altufevo/i;
+						var reg6=/#kolomenskaya/i;
+						var reg7=/#lublino/i;
+						var reg8=/#novoslobodskaya/i;
+						var reg9=/#tepliystan/i;
+						var reg10=/#universitet/i;
+						var reg11=/#butovo/i;
+						var reg12=/#molodezhnaya/i;
+						var reg13=/#tushinskaya/i;
+						var reg14=/#shelkovskaya/i;
+						var reg15=/#medvedkovo/i;
+						var reg16=/#novogireevo/i;
+						var reg17=/#ugozapadnaya/i;
+						var reg18=/#profsouznaya/i;
+						var reg19=/#balashiha/i;
+						var reg20=/#vidnoe/i;
+						var reg21=/#dzerzhinskiy/i;
+						var reg22=/#dolgoprudniy/i;
+						var reg23=/#klimovsk/i;
+						var reg24=/#korolev/i;
+						var reg25=/#krasnogorsk/i;
+						var reg26=/#lubertsy/i;
+						var reg27=/#mitishi/i;
+						var reg28=/#odintsovo/i;
+						var reg29=/#podolsk/i;
+						var reg30=/#ramenskoe/i;
+						var reg31=/#reutov/i;
+						var reg32=/#himki/i;
+						
+						
+						var MapCenter = new google.maps.LatLng(55.697586, 37.625628);
+						
+						  if(reg1.test(href_page)) {
+							MapCenter = secheltLoc;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро ВДНХ');
+						  } else if(reg2.test(href_page)) {
+							MapCenter = secheltLoc2;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Сокол');
+						  } else if(reg3.test(href_page)) {
+							MapCenter = secheltLoc3;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Братеево');
+						  } else if(reg4.test(href_page)) {
+							MapCenter = secheltLoc4;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Выхино');
+						  } else if(reg5.test(href_page)) {
+							MapCenter = secheltLoc5;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Алтуфьево');
+						  } else if(reg6.test(href_page)) {
+							MapCenter = secheltLoc6;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Коломенская');
+						  } else if(reg7.test(href_page)) {
+							MapCenter = secheltLoc7;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Люблино');
+						  } else if(reg8.test(href_page)) {
+							MapCenter = secheltLoc8;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Новослободская');
+						  } else if(reg9.test(href_page)) {
+							MapCenter = secheltLoc9;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Теплый стан');
+						  } else if(reg10.test(href_page)) {
+							MapCenter = secheltLoc10;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Университет');
+						  } else if(reg11.test(href_page)) {
+							MapCenter = secheltLoc11;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Бутово');
+						  } else if(reg12.test(href_page)) {
+							MapCenter = secheltLoc12;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Молодежная');
+						  } else if(reg13.test(href_page)) {
+							MapCenter = secheltLoc13;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Тушинская');
+						  } else if(reg14.test(href_page)) {
+							MapCenter = secheltLoc14;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Щелковская');
+						  } else if(reg15.test(href_page)) {
+							MapCenter = secheltLoc15;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Медведково');
+						  } else if(reg16.test(href_page)) {
+							MapCenter = secheltLoc16;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Новогиреево');
+						  } else if(reg17.test(href_page)) {
+							MapCenter = secheltLoc17;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Юго-западная');
+						  } else if(reg18.test(href_page)) {
+							MapCenter = secheltLoc18;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau вблизи вашей станции метро Профсоюзная');
+						  } else if(reg19.test(href_page)) {
+							MapCenter = secheltLoc19;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau В Балашихе');
+						  } else if(reg20.test(href_page)) {
+							MapCenter = secheltLoc20;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Видном');
+						  } else if(reg21.test(href_page)) {
+							MapCenter = secheltLoc21;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Дзержинском');
+						  } else if(reg22.test(href_page)) {
+							MapCenter = secheltLoc22;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Долгопрудном');
+						  } else if(reg23.test(href_page)) {
+							MapCenter = secheltLoc23;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Климовске');
+						  } else if(reg24.test(href_page)) {
+							MapCenter = secheltLoc24;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Королёве');
+						  } else if(reg25.test(href_page)) {
+							MapCenter = secheltLoc25;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Красногорске');
+						  } else if(reg26.test(href_page)) {
+							MapCenter = secheltLoc26;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau В Люберцах');
+						  } else if(reg27.test(href_page)) {
+							MapCenter = secheltLoc27;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Мытищах');
+						  } else if(reg28.test(href_page)) {
+							MapCenter = secheltLoc28;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Одинцово');
+						  } else if(reg29.test(href_page)) {
+							MapCenter = secheltLoc29;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Подольске');
+						  } else if(reg30.test(href_page)) {
+							MapCenter = secheltLoc30;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Раменском');
+						  } else if(reg31.test(href_page)) {
+							MapCenter = secheltLoc31;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Реутове');
+						  } else if(reg32.test(href_page)) {
+							MapCenter = secheltLoc32;
+							$('#feedback_form_map').css('right', 0).find('.more_tit').text('Закажите окна Rehau в Химках');
+						  }
+						
+						
+						
+						var myMapOptions = {
+							 zoom: 9
+							,center: MapCenter
+							,mapTypeId: google.maps.MapTypeId.ROADMAP,
+							scrollwheel: false,
+							styles:
+							  [
+							   {
+								stylers:
+								 [
+								  { hue: "#b4b4b4" },
+								  { saturation: -95 }
+								 ]
+							   }
+							  ]
+						};
+						
+						var theMap = new google.maps.Map(document.getElementById("map-canvas"), myMapOptions);
+
+						var image = {
+						url: 'images/beachflag.png',
+						// This marker is 20 pixels wide by 32 pixels tall.
+						size: new google.maps.Size(20, 32),
+						// The origin for this image is 0,0.
+						origin: new google.maps.Point(0,0),
+						// The anchor for this image is the base of the flagpole at 0,32.
+						anchor: new google.maps.Point(0, 32)
+					  };
+						
+						var marker = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						
+						var marker2 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc2,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+
+						var marker3 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc3,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+
+						var marker4 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc4,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker5 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc5,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker6 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc6,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker7 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc7,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker8 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc8,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker9 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc9,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker10 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc10,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker11 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc11,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker12 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc12,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker13 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc13,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker14 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc14,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker15 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc15,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker16 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc16,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker17 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc17,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker18 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc18,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker19 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc19,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker20 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc20,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker21 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc21,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker22 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc22,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker23 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc23,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker24 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc24,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker25 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc25,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker26 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc26,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker27 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc27,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker28 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc28,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker29 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc29,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker30 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc30,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker31 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc31,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						var marker32 = new google.maps.Marker({
+							map: theMap,
+							draggable: false,
+							position: secheltLoc32,
+							visible: true,
+							icon: {
+								url: 'images/marker.png',
+								size: null
+							},
+						});
+						
+						
+						var boxTextStyle = "cursor:pointer; color: #fff; font-size:15px; padding: 16px 20px;";
+
+						var boxText = document.createElement("div");
+						boxText.style.cssText = boxTextStyle;
+						boxText.innerHTML = "ВДНХ";
+
+						var boxText2 = document.createElement("div");
+						boxText2.style.cssText = boxTextStyle;
+						boxText2.innerHTML = "Сокол";
+
+						var boxText3 = document.createElement("div");
+						boxText3.style.cssText = boxTextStyle;
+						boxText3.innerHTML = "Братеево";
+
+						var boxText4 = document.createElement("div");
+						boxText4.style.cssText = boxTextStyle;
+						boxText4.innerHTML = "Выхино";
+
+						var boxText5 = document.createElement("div");
+						boxText5.style.cssText = boxTextStyle;
+						boxText5.innerHTML = "Алтуфьево";
+
+						var boxText6 = document.createElement("div");
+						boxText6.style.cssText = boxTextStyle;
+						boxText6.innerHTML = "Коломенская";
+
+						var boxText7 = document.createElement("div");
+						boxText7.style.cssText = boxTextStyle;
+						boxText7.innerHTML = "Люблино";
+
+						var boxText8 = document.createElement("div");
+						boxText8.style.cssText = boxTextStyle;
+						boxText8.innerHTML = "Новослободская";
+
+						var boxText9 = document.createElement("div");
+						boxText9.style.cssText = boxTextStyle;
+						boxText9.innerHTML = "Теплый стан";
+
+						var boxText10 = document.createElement("div");
+						boxText10.style.cssText = boxTextStyle;
+						boxText10.innerHTML = "Университет";
+
+						var boxText11 = document.createElement("div");
+						boxText11.style.cssText = boxTextStyle;
+						boxText11.innerHTML = "Бутово";
+
+						var boxText12 = document.createElement("div");
+						boxText12.style.cssText = boxTextStyle;
+						boxText12.innerHTML = "Молодежная";
+
+						var boxText13 = document.createElement("div");
+						boxText13.style.cssText = boxTextStyle;
+						boxText13.innerHTML = "Тушинская";
+
+						var boxText14 = document.createElement("div");
+						boxText14.style.cssText = boxTextStyle;
+						boxText14.innerHTML = "Щелковская";
+
+						var boxText15 = document.createElement("div");
+						boxText15.style.cssText = boxTextStyle;
+						boxText15.innerHTML = "Медведково";
+
+						var boxText16 = document.createElement("div");
+						boxText16.style.cssText = boxTextStyle;
+						boxText16.innerHTML = "Новогиреево";
+
+						var boxText17 = document.createElement("div");
+						boxText17.style.cssText = boxTextStyle;
+						boxText17.innerHTML = "Юго-западная";
+
+						var boxText18 = document.createElement("div");
+						boxText18.style.cssText = boxTextStyle;
+						boxText18.innerHTML = "Профсоюзная";
+
+						var boxText19 = document.createElement("div");
+						boxText19.style.cssText = boxTextStyle;
+						boxText19.innerHTML = "Балашиха";
+
+						var boxText20 = document.createElement("div");
+						boxText20.style.cssText = boxTextStyle;
+						boxText20.innerHTML = "Видное";
+
+						var boxText21 = document.createElement("div");
+						boxText21.style.cssText = boxTextStyle;
+						boxText21.innerHTML = "Дзержинский";
+
+						var boxText22 = document.createElement("div");
+						boxText22.style.cssText = boxTextStyle;
+						boxText22.innerHTML = "Долгопрудный";
+
+						var boxText23 = document.createElement("div");
+						boxText23.style.cssText = boxTextStyle;
+						boxText23.innerHTML = "Климовск";
+
+						var boxText24 = document.createElement("div");
+						boxText24.style.cssText = boxTextStyle;
+						boxText24.innerHTML = "Королёв";
+
+						var boxText25 = document.createElement("div");
+						boxText25.style.cssText = boxTextStyle;
+						boxText25.innerHTML = "Красногорск";
+
+						var boxText26 = document.createElement("div");
+						boxText26.style.cssText = boxTextStyle;
+						boxText26.innerHTML = "Люберцы";
+
+						var boxText27 = document.createElement("div");
+						boxText27.style.cssText = boxTextStyle;
+						boxText27.innerHTML = "Мытищи";
+
+						var boxText28 = document.createElement("div");
+						boxText28.style.cssText = boxTextStyle;
+						boxText28.innerHTML = "Одинцово";
+
+						var boxText29 = document.createElement("div");
+						boxText29.style.cssText = boxTextStyle;
+						boxText29.innerHTML = "Подольск";
+
+						var boxText30 = document.createElement("div");
+						boxText30.style.cssText = boxTextStyle;
+						boxText30.innerHTML = "Раменское";
+
+						var boxText31 = document.createElement("div");
+						boxText31.style.cssText = boxTextStyle;
+						boxText31.innerHTML = "Реутов";
+
+						var boxText32 = document.createElement("div");
+						boxText32.style.cssText = boxTextStyle;
+						boxText32.innerHTML = "Химки";
+
+						var myOptions = {
+							 content: boxText
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-40, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+						var myOptions2 = {
+							 content: boxText2
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-40, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions3 = {
+							 content: boxText3
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-50, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions4 = {
+							 content: boxText4
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-50, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions5 = {
+							 content: boxText5
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-60, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions6 = {
+							 content: boxText6
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-80, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions7 = {
+							 content: boxText7
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-60, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions8 = {
+							 content: boxText8
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-80, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions9 = {
+							 content: boxText9
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-70, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions10 = {
+							 content: boxText10
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-50, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions11 = {
+							 content: boxText11
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-40, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions12 = {
+							 content: boxText12
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-60, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions13 = {
+							 content: boxText13
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions14 = {
+							 content: boxText14
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-70, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions15 = {
+							 content: boxText15
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-60, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions16 = {
+							 content: boxText16
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-70, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions17 = {
+							 content: boxText17
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-70, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions18 = {
+							 content: boxText18
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions19 = {
+							 content: boxText19
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions20 = {
+							 content: boxText20
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions21 = {
+							 content: boxText21
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions22 = {
+							 content: boxText22
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions23 = {
+							 content: boxText23
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions24 = {
+							 content: boxText24
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions25 = {
+							 content: boxText25
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions26 = {
+							 content: boxText26
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions27 = {
+							 content: boxText27
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions28 = {
+							 content: boxText28
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions29 = {
+							 content: boxText29
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions30 = {
+							 content: boxText30
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions31 = {
+							 content: boxText31
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var myOptions32 = {
+							 content: boxText32
+							,disableAutoPan: false
+							,maxWidth: 0
+							,pixelOffset: new google.maps.Size(-65, -45)
+							,zIndex: null
+							,boxStyle: { 
+							  background: "rgb(114, 206, 114)"
+							  ,width: "auto"
+							 }
+							,closeBoxMargin: "10px 2px 2px 2px"
+							,closeBoxURL: ""
+							,infoBoxClearance: new google.maps.Size(1, 1)
+							,isHidden: false
+							,pane: "floatPane"
+							,enableEventPropagation: false
+						};
+
+						var ib = new InfoBox(myOptions);
+						var ib2 = new InfoBox(myOptions2);
+						var ib3 = new InfoBox(myOptions3);
+						var ib4 = new InfoBox(myOptions4);
+						var ib5 = new InfoBox(myOptions5);
+						var ib6 = new InfoBox(myOptions6);
+						var ib7 = new InfoBox(myOptions7);
+						var ib8 = new InfoBox(myOptions8);
+						var ib9 = new InfoBox(myOptions9);
+						var ib10 = new InfoBox(myOptions10);
+						var ib11 = new InfoBox(myOptions11);
+						var ib12 = new InfoBox(myOptions12);
+						var ib13 = new InfoBox(myOptions13);
+						var ib14 = new InfoBox(myOptions14);
+						var ib15 = new InfoBox(myOptions15);
+						var ib16 = new InfoBox(myOptions16);
+						var ib17 = new InfoBox(myOptions17);
+						var ib18 = new InfoBox(myOptions18);
+						var ib19 = new InfoBox(myOptions19);
+						var ib20 = new InfoBox(myOptions20);
+						var ib21 = new InfoBox(myOptions21);
+						var ib22 = new InfoBox(myOptions22);
+						var ib23 = new InfoBox(myOptions23);
+						var ib24 = new InfoBox(myOptions24);
+						var ib25 = new InfoBox(myOptions25);
+						var ib26 = new InfoBox(myOptions26);
+						var ib27 = new InfoBox(myOptions27);
+						var ib28 = new InfoBox(myOptions28);
+						var ib29 = new InfoBox(myOptions29);
+						var ib30 = new InfoBox(myOptions30);
+						var ib31 = new InfoBox(myOptions31);
+						var ib32 = new InfoBox(myOptions32);
+
+						//ib2.open(theMap);
+						
+						google.maps.event.addListener(marker, "mouseover", function (e) {
+							ib.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						
+						google.maps.event.addListener(marker2, "mouseover", function (e) {
+							ib2.open(theMap, this);
+							ib.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker3, "mouseover", function (e) {
+							ib3.open(theMap, this);
+							ib2.close();
+							ib.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker4, "mouseover", function (e) {
+							ib4.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker5, "mouseover", function (e) {
+							ib5.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker6, "mouseover", function (e) {
+							ib6.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker7, "mouseover", function (e) {
+							ib7.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker8, "mouseover", function (e) {
+							ib8.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker9, "mouseover", function (e) {
+							ib9.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker10, "mouseover", function (e) {
+							ib10.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker11, "mouseover", function (e) {
+							ib11.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker12, "mouseover", function (e) {
+							ib12.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker13, "mouseover", function (e) {
+							ib13.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker14, "mouseover", function (e) {
+							ib14.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker15, "mouseover", function (e) {
+							ib15.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker16, "mouseover", function (e) {
+							ib16.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker17, "mouseover", function (e) {
+							ib17.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker18, "mouseover", function (e) {
+							ib18.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker19, "mouseover", function (e) {
+							ib19.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker20, "mouseover", function (e) {
+							ib20.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker21, "mouseover", function (e) {
+							ib21.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker22, "mouseover", function (e) {
+							ib22.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker23, "mouseover", function (e) {
+							ib23.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker24, "mouseover", function (e) {
+							ib24.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker25, "mouseover", function (e) {
+							ib25.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker26, "mouseover", function (e) {
+							ib26.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker27, "mouseover", function (e) {
+							ib27.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker28, "mouseover", function (e) {
+							ib28.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker29, "mouseover", function (e) {
+							ib29.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib.close();
+							ib30.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker30, "mouseover", function (e) {
+							ib30.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib.close();
+							ib31.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker31, "mouseover", function (e) {
+							ib31.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib.close();
+							ib32.close();
+						});
+						google.maps.event.addListener(marker32, "mouseover", function (e) {
+							ib32.open(theMap, this);
+							ib2.close();
+							ib3.close();
+							ib4.close();
+							ib5.close();
+							ib6.close();
+							ib7.close();
+							ib8.close();
+							ib9.close();
+							ib10.close();
+							ib11.close();
+							ib12.close();
+							ib13.close();
+							ib14.close();
+							ib15.close();
+							ib16.close();
+							ib17.close();
+							ib18.close();
+							ib19.close();
+							ib20.close();
+							ib21.close();
+							ib22.close();
+							ib23.close();
+							ib24.close();
+							ib25.close();
+							ib26.close();
+							ib27.close();
+							ib28.close();
+							ib29.close();
+							ib30.close();
+							ib31.close();
+							ib.close();
+						});
+						
+						if(reg1.test(href_page)) {
+							ib.open(theMap, marker2);
+						  } else if(reg2.test(href_page)) {
+							ib2.open(theMap, marker2);
+						  } else if(reg3.test(href_page)) {
+							ib3.open(theMap, marker3);
+						  } else if(reg4.test(href_page)) {
+							ib4.open(theMap, marker4);
+						  } else if(reg5.test(href_page)) {
+							ib5.open(theMap, marker5);
+						  } else if(reg6.test(href_page)) {
+							ib6.open(theMap, marker6);
+						  } else if(reg7.test(href_page)) {
+							ib7.open(theMap, marker7);
+						  } else if(reg8.test(href_page)) {
+							ib8.open(theMap, marker8);
+						  } else if(reg9.test(href_page)) {
+							ib9.open(theMap, marker9);
+						  } else if(reg10.test(href_page)) {
+							ib10.open(theMap, marker10);
+						  } else if(reg11.test(href_page)) {
+							ib11.open(theMap, marker11);
+						  } else if(reg12.test(href_page)) {
+							ib12.open(theMap, marker12);
+						  } else if(reg13.test(href_page)) {
+							ib13.open(theMap, marker13);
+						  } else if(reg14.test(href_page)) {
+							ib14.open(theMap, marker14);
+						  } else if(reg15.test(href_page)) {
+							ib15.open(theMap, marker15);
+						  } else if(reg16.test(href_page)) {
+							ib16.open(theMap, marker16);
+						  } else if(reg17.test(href_page)) {
+							ib17.open(theMap, marker17);
+						  } else if(reg18.test(href_page)) {
+							ib18.open(theMap, marker18);
+						  } else if(reg19.test(href_page)) {
+							ib19.open(theMap, marker19);
+						  } else if(reg20.test(href_page)) {
+							ib20.open(theMap, marker20);
+						  } else if(reg21.test(href_page)) {
+							ib21.open(theMap, marker21);
+						  } else if(reg22.test(href_page)) {
+							ib22.open(theMap, marker22);
+						  } else if(reg23.test(href_page)) {
+							ib23.open(theMap, marker23);
+						  } else if(reg24.test(href_page)) {
+							ib24.open(theMap, marker24);
+						  } else if(reg25.test(href_page)) {
+							ib25.open(theMap, marker25);
+						  } else if(reg26.test(href_page)) {
+							ib26.open(theMap, marker26);
+						  } else if(reg27.test(href_page)) {
+							ib27.open(theMap, marker27);
+						  } else if(reg28.test(href_page)) {
+							ib28.open(theMap, marker28);
+						  } else if(reg29.test(href_page)) {
+							ib29.open(theMap, marker29);
+						  } else if(reg30.test(href_page)) {
+							ib30.open(theMap, marker30);
+						  } else if(reg31.test(href_page)) {
+							ib31.open(theMap, marker31);
+						  } else if(reg32.test(href_page)) {
+							ib32.open(theMap, marker32);
+						  }
+						
+					}
+			   google.maps.event.addDomListener(window, 'load', initialize);
+			   
+			  
+			  </script>

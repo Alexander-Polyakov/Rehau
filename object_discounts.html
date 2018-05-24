@@ -1,0 +1,453 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.selectbox.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body id="object_discounts" class="anim_ready">
+	<div id="results"></div>
+	<div class="pop_form_bg"></div>
+	<div class="video_popup">
+		<div class="close"></div>
+		<iframe src="https://www.youtube.com/embed/WSZrvubEFGc" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="pop_form_wrap">
+		<div class="popup_form thank_you">
+			<div class="close"></div>
+			<div class="main_tit">
+				Ваш запрос отправлен
+			</div>
+			<div class="descr_txt">
+				В ближайшее время с вами свяжется наш менеджер
+			</div>
+		</div>
+		<div class="popup_form reg_form">
+			<div class="close"></div>
+			<div class="main_tit">
+				Индивидуальные условия Rehau <br> по стоимости остекления вашего объекта
+			</div>
+			<form id="feedback_form" class="form_bl feedback_form" action="mail.php" method="post">
+				<input type="hidden" name="need_email" value="object@rehau.discount"/>
+				<p class="descr_txt">
+					Оставьте ваши контактные данные и мы свяжемся с вами в самое ближайшее время для уточнения деталей заказа:
+				</p>
+				<p class="line_wrap">
+					<input id="u_name" type="text" name="u_name" placeholder="Ваше имя">
+				</p>
+				<p class="line_wrap">
+					<input class="u_phone" type="text" name="u_phone" placeholder="Ваш телефон">
+				</p>
+				<!--<p class="line_wrap">
+					<select id="region" name='region'>
+						<option value="0">Ваш округ в москве</option>
+						<option value="Центральный административный округ">Центральный административный округ</option>
+						<option value="Северный автономный округ">Северный автономный округ</option>
+						<option value="Северо-Восточный административный округ">Северо-Восточный административный округ</option>
+						<option value="Восточный административный округ">Восточный административный округ</option>
+						<option value="Юго-Восточный административный округ">Юго-Восточный административный округ</option>
+						<option value="Южный административный округ">Южный административный округ</option>
+						<option value="Юго-Западный административный округ">Юго-Западный административный округ</option>
+						<option value="Западный административный округ">Западный административный округ</option>
+						<option value="Северо-Западный административный округ">Северо-Западный административный округ</option>
+						<option value="Зеленоградский административный округ">Зеленоградский административный округ</option>
+						<option value="Новомосковский административный округ">Новомосковский административный округ</option>
+						<option value="Троицкий административный округ">Троицкий административный округ</option>
+						<option value="Люберцы">Люберцы</option>
+						<option value="Балашиха">Балашиха</option>
+						<option value="Красногорск">Красногорск</option>
+						<option value="Одинцово">Одинцово</option>
+						<option value="Видное">Видное</option>
+						<option value="Мытищи">Мытищи</option>
+						<option value="Химки">Химки</option>
+						<option value="Подольск">Подольск</option>
+					</select>
+				</p>-->
+				<div class="btn_wrap ">
+					<button type="submit" class="main_btn feedback_button">
+						<span class="txt">Отправить<i class="fa fa-chevron-right"></i></span>
+						<span class="anim_bl"></span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<header id="main_head">
+		<div class="cont_wrap">
+			<a class="logo l_bl" href="index.html">
+				<img src="images/logo.png" alt="logo">
+			</a>
+			<a href="tel:+74954532384" class="head_phone r_bl">
+				<span class="icon in_bl"></span>
+				<span class="in_bl">+7 495 453 23 84</span>
+			</a>
+			<nav class="main_nav r_bl">
+				<ul>
+					<li>
+						<a href="individuals.html">Частным лицам</a>
+					</li>
+					<li>
+						<a href="professionals.html">Профессионалам</a>
+					</li>
+					<li>
+						<a class="active" href="#">Объектные скидки</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="advantages" class="abs_bl visible_screen">
+		<div class="hero">
+			<div class="hero__back--static"></div>
+			<div class="hero__back--mover"></div>
+		</div>
+		<div class="advantage_bl ">
+			<div class="cont_wrap">
+				<p class="main_tit txt_cent white_text">
+					ДОВЕРЬТЕ ВАШ ОБЪЕКТ <br> СПЕЦИАЛИСТАМ REHAU
+				</p>
+				<div class="units_icon">
+					<div class="item">
+						<div class="img_it icon_1">
+							<img src="images/icon_151.png" alt="">
+						</div>
+						<div class="more_tit">
+							Объектные скидки
+						</div>
+						<div class="descr_it">
+							Для каждого объекта Rehau <br> предлагает индивидуальные условия
+						</div>
+					</div>
+					<div class="item">
+						<div class="img_it">
+							<img src="images/icon_8.png" alt="">
+						</div>
+						<div class="more_tit">
+							Непревзойденные характеристики окон Rehau: тепло и тишина
+						</div>
+						<div class="descr_it">
+							<a class="video_link" href="#">
+								<span class="img_wrap">
+									<img src="images/link_3.jpg" alt="">
+									<span class="play"><i class="fa fa-play"></i></span>
+									<span class="cover"></span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img_it icon_3">
+							<img src="images/icon_3.png" alt="">
+						</div>
+						<div class="more_tit">
+							Знак качества
+						</div>
+						<div class="descr_it">
+							Rehau – гарантия безупречного <br>
+							остекления вашего объекта
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="percent_bg">
+			<div class="percent_anim dont_anim">
+				<div class="icon the_1">%</div>
+				<div class="icon the_2">%</div>
+				<div class="icon the_3">%</div>
+				<div class="icon the_4">%</div>
+				<div class="icon the_5">%</div>
+				<div class="icon the_6">%</div>
+			</div>
+			<div class="cont_wrap clearfix">
+				<div class="l_bl title_wrap">
+					<p class="main_tit white_text">ОБЪЕКТНЫЕ СКИДКИ</p>
+					<p class="more_txt">
+						Индивидуальные условия Rehau <br> по стоимости остекления вашего объекта
+					</p>
+				</div>
+				<div class="r_bl btn_wrap">
+					<a class="main_btn white_btn scroll_bot" href="#">
+						<span class="txt">Рассчитать объектную скидку <i class="fa fa-chevron-right"></i></span>
+						<span class="anim_bl"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="selection_bl" class="abs_bl">
+		<div class="cont_wrap slides">
+			<div class="main_txt_bl ">
+				<div class="big_img_bl">
+					<div class="title_bl">
+						РЕАЛИЗОВАННЫЕ ОБЪЕКТЫ
+					</div>
+					<div class="item active" data-item="1">
+						<img src="images/slide_7.jpg" alt="">
+					</div>
+					<div class="item" data-item="2">
+						<img src="images/slide_8.jpg" alt="">
+					</div>
+					<div class="item" data-item="3">
+						<img src="images/slide_9.jpg" alt="">
+					</div>
+					<div class="item" data-item="4">
+						<img src="images/slide_10.jpg" alt="">
+					</div>
+				</div>
+				<div class="toggle_btn_bl clearfix">		
+					<div class="it_wrap clearfix l_bl">
+						<div class="anim_it active" data-item="1">
+							<div class="anim_img">
+								<img src="images/slide_7.jpg" alt="">
+							</div>
+							<span class="wrap_bg"></span>
+						</div>
+
+						<div class="anim_it" data-item="2">
+							<div class="anim_img">
+								<img src="images/slide_8.jpg" alt="">
+							</div>
+							<span class="wrap_bg"></span>
+						</div>
+					
+						<div class="anim_it" data-item="3">
+							<div class="anim_img">
+								<img src="images/slide_9.jpg" alt="">
+							</div>
+							<span class="wrap_bg"></span>
+						</div>
+						
+						<div class="anim_it" data-item="4">
+							<div class="anim_img">
+								<img src="images/slide_10.jpg" alt="">
+							</div>
+							<span class="wrap_bg"></span>
+						</div>
+					</div>
+					<div class="big_img_bl more_descr l_bl clearfix">
+						<div class="item active" data-item="1">
+							<p class="more_tit ">
+								Банкет-холл Лужники
+							</p>
+							<p>
+								При реконструкции здания для остекления был выбран оптимальный вариант – Rehau Delight-Design. Дизайнерскую створку отличают благородные пропорции, округлость форм и изящная рельефность декоративного штапика.
+							</p>
+						</div>
+						<div class="item" data-item="2">
+							<p class="more_tit ">
+								Жилой комплекс Большой 
+							</p>
+							<p>
+								Компанией Rehau был подобран вариант остекления Delight Design для высотных домов с усиленной конструкцией, чтобы выдержать ветровые нагрузки на верхних этажах, и с повышенной шумоизоляцией, чтобы обеспечить комфортную атмосферу в доме, несмотря на нахождение в шумном центре города. 
+							</p>
+						</div>
+						<div class="item" data-item="3">
+							<p class="more_tit ">
+								Бизнес-центр Донэнерго 
+							</p>
+							<p>
+								Для остекления стандартных оконных проемов здания использована система 3-камерных профилей Rehau Basic Design, для вертикальных витражных конструкций и остекления кровли над холлом – фасадная система Rehau Polytec 50. 
+							</p>
+						</div>
+						<div class="item" data-item="4">
+							<p class="more_tit ">
+								ЖК Caspian Palace 2 
+							</p>
+							<p>
+								Балконные двери и окна с тройным остеклением выполнены из профилей Rehau Brillant Design.  
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="why_rehau" class="abs_bl">
+		<div class="cont_wrap">
+			<p class="main_tit txt_cent white_text">
+				Почему компания <br> rehau?
+			</p>
+			<div class="units_icon">
+				<div class="item">
+					<div class="img_it icon_9">
+						<img src="images/icon_12.png" alt="">
+					</div>
+					<div class="more_tit">
+						Мировой лидер в производстве пластиковых окон
+					</div>
+					<div class="descr_it">
+						Первые окна произведены в 1958 года
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_it icon_10">
+						<img src="images/icon_13.png" alt="">
+					</div>
+					<div class="more_tit ">
+						Долговечные окна
+					</div>
+					<div class="descr_it">
+						Установка вклееного стеклопакета <br> дает беспрецедентные сроки <br> службы окна
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_it icon_11">
+						<img src="images/icon_150.png" alt="">
+					</div>
+					<div class="more_tit ">
+						Помощь профессионалов
+					</div>
+					<div class="descr_it">
+						Безупречный расчет, залог<br>
+						безукоризненной работы окон<br>
+						и дверей на вашем объекте
+					</div>
+				</div>
+			</div>
+			<div class="cent_txt btn_wrap ">
+				<a href="#" class="main_btn scroll_bot">
+					<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+					<span class="anim_bl"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section id="map_block" class="abs_bl">
+		<div id="moscow" class="cont_wrap">
+			<section id="contactsMap">
+				<div class='address_bl'>
+					<div class="text_wrap">
+						<p class="main_tit pink_text">ОТДЕЛ ОБЪЕКТНЫХ <br> РЕШЕНИЙ</p>
+						<div class="contact_wrap">
+							<p class="line">
+								<span class="in_bl left_txt">
+								Адрес 
+								</span>
+								<span class="in_bl">Ул. Большая Тульская, 10, стр. 9</span>
+							</p>
+							<p class="line">
+								<span class="in_bl left_txt">
+								Телефон 
+								</span>
+								<span class="in_bl">+7(495) 540 58 46</span>
+							</p>
+							<p class="line">
+								<span class="in_bl left_txt">
+								Эл. почта 
+								</span>
+								<a href="mailto:sale@rehau.discount" class="in_bl">sale@rehau.discount</a>
+							</p>
+						</div>
+						<p class="more_tit pink_text">Часы работы</p>
+						<p >В будни: 10:00 – 19:00</p>
+						<p class="text">В выходные и праздники: 10:00 – 16:00</p>
+						<p class="more_tit pink_text">Сотрудники</p>
+					</div>
+					<div class="staff_bl clearfix">
+						<div class="icon"> 
+							<span class="wrap_top"></span>
+							<div class="pop_text">
+								<p class="name">Савостина Елена Дмитриевна</p>
+								<p class="office">Менеджер офиса продаж</p>
+							</div>
+							<img src="images/staff4.jpg" alt="">
+						</div>
+						<div class="icon">
+							<span class="wrap_top"></span>
+							<div class="pop_text">
+								<p class="name">Клюкин Михаил Олегович</p>
+								<p class="office">Директор офиса продаж</p>
+							</div>
+							<img src="images/staff5.jpg" alt="">
+						</div>
+						<div class="icon">
+							<span class="wrap_top"></span>
+							<div class="pop_text">
+								<p class="name">Лисовая Наталья Михайловна</p>
+								<p class="office">Менеджер офиса продаж</p>
+							</div>
+							<img src="images/staff6.png" alt="">
+						</div>
+					</div>
+					<div class='pink_bl'>
+						<p class="more_tit">Центральный офис продаж</p>
+						<div class="contact_wrap">
+							<p class="line">
+								<span class="in_bl left_txt">
+								Телефон 
+								</span>
+								<span class="in_bl">+7(495) 540 58 34</span>
+							</p>
+							<p class="line">
+								<span class="in_bl left_txt">
+								Эл. почта 
+								</span>
+								<a href="mailto:object@rehau.discount" class="in_bl">object@rehau.discount</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+			  <script>
+			   function initialize() {
+			    var myLatlng = new google.maps.LatLng(55.678060, 37.512684);
+			    var mapOptions = {
+			     zoom: 16,
+			     center: myLatlng,
+			     scrollwheel: false,
+			     styles:
+			      [
+			       {
+			        stylers:
+			         [
+			          { hue: "#b4b4b4" },
+			          { saturation: -95 }
+			         ]
+			       }
+			      ]
+			    }
+			    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+			    var marker = new google.maps.Marker({
+			     position: myLatlng,
+			     map: map,
+			     icon: 'images/marker.png',
+			     title: 'My Map'
+			    });
+			   }
+			   google.maps.event.addDomListener(window, 'load', initialize);
+			  </script>
+			  <div class="map"><div id="map-canvas"></div></div>
+			  <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.8148165853736!2d37.51251260979044!3d55.6780403642224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cffa4c0cf11%3A0xb96df050dc36d178!2z0L_RgC4g0JLQtdGA0L3QsNC00YHQutC-0LPQviwgMzcsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTk0MTU!5e0!3m2!1sru!2s!4v1415357273510" style="height:400px; width:100%;" frameborder="0" style="border:0"></iframe>-->
+			 </section>
+		</div>
+	</section>
+	<footer id="main_footer">
+		<div class="cont_wrap clearfix">
+			<a href="tel:+74954532384" class="footer_phone l_bl">
+				<span class="icon in_bl"></span>
+				<span class="in_bl">+7 495 540 58 34 – Центральный офис продаж</span>
+			</a>
+			<div class="copy r_bl">
+				&copy; 2015 Rehau Доступное качество
+			</div>
+		</div>
+	</footer>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

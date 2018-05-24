@@ -1,0 +1,590 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.selectbox.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body id="professionals" class="anim_ready">
+	<div class="pop_form_bg"></div>
+<div class="video_popup">
+		<div class="close"></div>
+		<iframe src="https://www.youtube.com/embed/WSZrvubEFGc" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="pop_form_wrap">
+		<div class="popup_form thank_you">
+			<div class="close"></div>
+			<div class="main_tit">
+				Ваш запрос отправлен
+			</div>
+			<div class="descr_txt">
+				В ближайшее время с вами свяжется наш менеджер
+			</div>
+		</div>
+		<div class="popup_form reg_form">
+			<div class="close"></div>
+			<div class="main_tit">
+				Гибкая ценовая политика – <br> основа взаимовыгодного сотрудничества
+			</div>
+			<form id="feedback_form" class="form_bl feedback_form" action="mail.php" method="post">
+				<input type="hidden" name="need_email" value="pro@rehau.discount"/>
+				<p class="descr_txt">
+					Оставьте ваши контактные данные и мы свяжемся с вами в самое ближайшее время для уточнения деталей заказа:
+				</p>
+				<p class="line_wrap">
+					<input id="u_name" type="text" name="u_name" placeholder="Ваше имя">
+				</p>
+				<p class="line_wrap">
+					<input class="u_phone" type="text" name="u_phone" placeholder="Ваш телефон">
+				</p>
+				<!--<p class="line_wrap">
+					<select id="region" name='region'>
+						<option value="0">Ваш округ в москве</option>
+						<option value="Центральный административный округ">Центральный административный округ</option>
+						<option value="Северный автономный округ">Северный автономный округ</option>
+						<option value="Северо-Восточный административный округ">Северо-Восточный административный округ</option>
+						<option value="Восточный административный округ">Восточный административный округ</option>
+						<option value="Юго-Восточный административный округ">Юго-Восточный административный округ</option>
+						<option value="Южный административный округ">Южный административный округ</option>
+						<option value="Юго-Западный административный округ">Юго-Западный административный округ</option>
+						<option value="Западный административный округ">Западный административный округ</option>
+						<option value="Северо-Западный административный округ">Северо-Западный административный округ</option>
+						<option value="Зеленоградский административный округ">Зеленоградский административный округ</option>
+						<option value="Новомосковский административный округ">Новомосковский административный округ</option>
+						<option value="Троицкий административный округ">Троицкий административный округ</option>
+						<option value="Люберцы">Люберцы</option>
+						<option value="Балашиха">Балашиха</option>
+						<option value="Красногорск">Красногорск</option>
+						<option value="Одинцово">Одинцово</option>
+						<option value="Видное">Видное</option>
+						<option value="Мытищи">Мытищи</option>
+						<option value="Химки">Химки</option>
+						<option value="Подольск">Подольск</option>
+					</select>
+				</p>-->
+				<div class="btn_wrap ">
+					<button type="submit" class="main_btn feedback_button">
+						<span class="txt">Отправить<i class="fa fa-chevron-right"></i></span>
+						<span class="anim_bl"></span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<header id="main_head">
+		<div class="cont_wrap">
+			<a class="logo l_bl" href="index.html">
+				<img src="images/logo.png" alt="logo">
+			</a>
+			<a href="tel:+74954532384" class="head_phone r_bl">
+				<span class="icon in_bl"></span>
+				<span class="in_bl">+7 495 453 23 84</span>
+			</a>
+			<nav class="main_nav r_bl">
+				<ul>
+					<li>
+						<a  href="individuals.html">Частным лицам</a>
+					</li>
+					<li>
+						<a class="active" href="#">Профессионалам</a>
+					</li>
+					<li>
+						<a href="object_discounts.html">Объектные скидки</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="advantages" class="abs_bl visible_screen">
+		<div class="hero">
+			<div class="hero__back--static"></div>
+			<div class="hero__back--mover"></div>
+		</div>
+		<div class="advantage_bl ">
+			<div class="cont_wrap">
+				<p class="main_tit txt_cent white_text">
+					СОТРУДНИЧАЙТЕ С МИРОВЫМ ЛИДЕРОМ<br> В ПРОИЗВОДСТВЕ ПЛАСТИКОВЫХ ОКОН
+				</p>
+				<div class="units_icon">
+					<div class="item">
+						<div class="img_it icon_1">
+							<img src="images/icon_16.png" alt="">
+						</div>
+						<div class="more_tit">
+							Rehau для профессионалов
+						</div>
+						<div class="descr_it">
+							Персональные накопительные условия<br>
+							для архитекторов и строительных<br>
+							организаций
+						</div>
+					</div>
+					<div class="item">
+						<div class="img_it">
+							<img src="images/icon_7.png" alt="">
+						</div>
+						<div class="more_tit">
+							Непревзойденные характеристики<br> окон Rehau: тепло и тишина
+						</div>
+						<div class="descr_it">
+							<a class="video_link" href="#">
+								<span class="img_wrap">
+									<img src="images/link_2.jpg" alt="">
+									<span class="play"><i class="fa fa-play"></i></span>
+									<span class="cover"></span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img_it icon_3">
+							<img src="images/icon_3.png" alt="">
+						</div>
+						<div class="more_tit">
+							Знак качества
+						</div>
+						<div class="descr_it">
+							Ваши клиенты всегда останутся довольны<br> эталонным качеством Rehau
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="percent_bg">
+			<div class="percent_anim dont_anim">
+				<div class="icon the_1">%</div>
+				<div class="icon the_2">%</div>
+				<div class="icon the_3">%</div>
+				<div class="icon the_4">%</div>
+				<div class="icon the_5">%</div>
+				<div class="icon the_6">%</div>
+			</div>
+			<div class="cont_wrap clearfix">
+				<div class="l_bl title_wrap">
+					<p class="main_tit white_text">Персональные условия</p>
+					<p class="more_txt">
+						Гибкая ценовая политика и широкие возможности производства <br> являются залогом взаимовыгодного сотрудничества
+					</p>
+				</div>
+				<div class="r_bl btn_wrap">
+					<a class="main_btn white_btn scroll_bot" href="#">
+						<span class="txt">Обсудить условия сотрудничества <i class="fa fa-chevron-right"></i></span>
+						<span class="anim_bl"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="selection_bl" class="abs_bl">
+		<div class="cont_wrap toggle_wrap">
+			<div class="main_txt_bl ">
+				<div class="big_img_bl">
+					<div id="blitz" class="item" data-item="1">
+						<img src="images/profiles-blitz.jpg" alt="">
+						<div class='txt_bl'>
+							<p class="main_tit">Blitz</p>
+							<div class='it_descr'>
+								<p class="descr">
+									Надежные окна, которые эффективно сохраняют тепло, защищают дом от уличного шума и легко вписываются в любой интерьер. Окна Rehau Blitz — это знаменитое немецкое качество и дизайн от Rehau по специальной привлекательной цене.
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<a href="#" class="main_btn scroll_bot">
+									<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+									<span class="anim_bl"></span>
+								</a>	
+							</div>
+						</div>
+					</div>
+					<div id="sib" class="item" data-item="2">
+						<img src="images/profiles-sib.jpg" alt="">
+						<div class='txt_bl'>
+							<p class="main_tit">Sib</p>
+							<div class='it_descr'>
+								<p class="more_tit">Тепло</p>
+								<p class="descr white_text">
+									Rehau Sib Design разработана специально для российских холодов. Благодаря дополнительной изолирующей камере «Термо-блок» оконная система выдерживает перепады температур более 60°C и эффективно сохраняет тепло.
+								</p>
+							</div>
+							<div class='it_descr'>
+								<p class="more_tit">Экономия</p>
+								<p class="descr white_text">
+									Ваша ежегодная экономия электроэнергии может составить более 16 000 руб. по тарифам Москвы.
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<a href="#" class="main_btn scroll_bot">
+									<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+									<span class="anim_bl"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="delight" class="item" data-item="3">
+						<img src="images/profiles-delight.jpg" alt="">
+						<div class='txt_bl'>
+							<p class="main_tit">Delight </p>
+							<div class='it_descr'>
+								<p class="more_tit">Больше тепла для семьи</p>
+								<p class="descr ">
+									Энергосберегающие окна Rehau Intelio позволяют забыть о холоде навсегда. Теплый прием для самых близких – это просто!
+								</p>
+							</div>
+							<div class='it_descr'>
+								<p class="more_tit">Больше времени для себя </p>
+								<p class="descr">
+									Высококачественная HDF-поверхность окон Intelio c низкой пористостью остается белоснежной надолго – загрязнения не впитываются и не скапливаются на ней.
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<a href="#" class="main_btn scroll_bot">
+									<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+									<span class="anim_bl"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="brillant" class="item" data-item="4">
+						<img src="images/profiles-brillant.jpg" alt="">
+						<div class='txt_bl'>
+							<p class="main_tit">Brillant</p>
+							<div class='it_descr'>
+								<p class="more_tit">Экономия энергии до 76%</p>
+								<p class="descr">
+									Разнообразие форм и самая богатая палитра цветовых оттенков. Наряду с классическим белым можно выбрать практически любой цвет по шкале RAL.
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<a href="#" class="main_btn scroll_bot">
+									<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+									<span class="anim_bl"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="intelio" class="item" data-item="5">
+						<img src="images/profiles-intelio.jpg" alt="">
+						<div class='txt_bl'>
+							<p class="main_tit">Intelio</p>
+							<div class='it_descr'>
+								<p class="more_tit">Светлее</p>
+								<p class="descr">
+									Ноу-хау технического решения Delight Design дает возможность сократить высоту профильной конструкции и впустить в помещение на 10% больше света по сравнению с обычными окнами. А это – больше радости и хорошего самочувствия!
+								</p>
+							</div>
+							<div class='it_descr'>
+								<p class="more_tit">Изящнее</p>
+								<p class="descr">
+									Особенную изысканность окнам придают новая фигурная створка и декоративный штапик с изящным рельефом.
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<a href="#" class="main_btn scroll_bot">
+									<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+									<span class="anim_bl"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="geneo" class="item active" data-item="6">
+						<img src="images/profiles-geneo.jpg" alt="">
+						<div class='txt_bl'>
+							<p class="main_tit">Geneo</p>
+							<div class='it_descr'>
+								<p class="more_tit">Экономия энергии 76%</p>
+								<p class="descr">
+									В способности беречь тепло им нет равных: инновационная конструкция Geneo снижает потери энергии на 76% по сравнению с деревянными окнами.
+								</p>
+							</div>
+							<div class='it_descr'>
+								<p class="more_tit">В два раза меньше шума</p>
+								<p class="descr">
+									Окна Geneo позволят наслаждаться тишиной и покоем, даже если ваш дом располагается на расстоянии 40 м от автострады с интенсивным движением.
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<a href="#" class="main_btn scroll_bot">
+									<span class="txt">Сделать заказ <i class="fa fa-chevron-right"></i></span>
+									<span class="anim_bl"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="toggle_btn_bl">		
+					<div class="group_wrap">
+						<div class="it_wrap">
+							<div class="anim_it" id="blitz" data-item="1">
+								<div class="anim_img">
+									<img class="el_1 active" src="images/Euro1.png" alt="">
+									<img class="el_2" src="images/Euro2.png" alt="">
+									<img class='el_3' src="images/Euro3.png" alt="">
+								</div>
+								<p class="name_tit">Blitz</p>
+								<span class="anim_green"></span>
+							</div>
+						</div>
+						<div class="group_value">
+							60 мм
+						</div>
+					</div>
+					<div class="group_wrap">
+						<div class="it_wrap">
+							<div class="anim_it" id="sib" data-item="2">
+								<div class="anim_img sib">
+									<img class="el_1 active" src="images/sib1.png" alt="">
+									<img class="el_2 " src="images/sib2.png" alt="">
+									<img class='el_3' src="images/sib3.png" alt="">
+								</div>
+								<p class="name_tit">Sib</p>
+								<span class="anim_green"></span>
+							</div>
+							<div class="anim_it" id="delight" data-item="3">
+								<div class="anim_img">
+									<img class="el_1 active" src="images/Delight1.png" alt="">
+									<img class="el_2" src="images/Delight2.png" alt="">
+									<img class='el_3' src="images/Delight3.png" alt="">
+								</div>
+								<p class="name_tit">Delight</p>
+								<span class="anim_green"></span>
+							</div>
+							<div class="anim_it" id="brillant" data-item="4">
+								<div class="anim_img">
+									<img class="el_1 active" src="images/Brillant1.png" alt="">
+									<img class="el_2" src="images/Brillant2.png" alt="">
+									<img class='el_3' src="images/Brillant3.png" alt="">
+								</div>
+								<p class="name_tit">Brillant</p>
+								<span class="anim_green"></span>
+							</div>
+						</div>
+						<div class="group_value">
+							70 мм
+						</div>
+					</div>
+					<div class="group_wrap">
+						<div class="it_wrap">
+							<div class="anim_it" id="intelio" data-item="5">
+								<div class="anim_img">
+									<img class="el_1 active" src="images/Intelio1.png" alt="">
+									<img class="el_2" src="images/Intelio2.png" alt="">
+									<img class='el_3' src="images/Intelio3.png" alt="">
+								</div>
+								<p class="name_tit">Intelio</p>
+								<span class="anim_green"></span>
+							</div>
+							<div class="anim_it active" id="geneo" data-item="6">
+								<div class="anim_img">
+									<img class="el_1 active" src="images/Geneo1.png" alt="">
+									<img class="el_2" src="images/Geneo2.png" alt="">
+									<img class='el_3' src="images/Geneo3.png" alt="">
+								</div>
+								<p class="name_tit">Geneo</p>
+								<span class="anim_green"></span>
+							</div>
+						</div>
+						<div class="group_value">
+							86 мм
+						</div>
+					</div>
+				</div>
+				<div class="additional_text">
+					<p >Теплее и тише</p>
+					<div class="line">
+						<i class="fa fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="why_rehau" class="abs_bl">
+		<div class="cont_wrap">
+			<p class="main_tit txt_cent white_text">
+				выбрав rehau <br> вы получаете
+			</p>
+			<div class="units_icon">
+				<div class="item">
+					<div class="img_it icon_9">
+						<img src="images/icon_9.png" alt="">
+					</div>
+					<div class="more_tit">
+						Доступное качество
+					</div>
+					<div class="descr_it">
+						Окна от производителя.<br>
+						Максимально низкая цена<br>
+						при высочайшем качестве
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_it icon_10">
+						<img src="images/icon_10.png" alt="">
+					</div>
+					<div class="more_tit ">
+						Современные окна
+					</div>
+					<div class="descr_it">
+						Арочные, круглые, панорамные, <br> французкие. Окна любой сложности <br> в любом стиле
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_it icon_11">
+						<img src="images/icon_11.png" alt="">
+					</div>
+					<div class="more_tit ">
+						Помощь в проектирование
+					</div>
+					<div class="descr_it">
+						Инженеры Rehau с удовольствием<br>
+						помогут рассчитать светопрозрачные<br>
+						конструкции для вашего проекта
+					</div>
+				</div>
+			</div>
+			<div class="cent_txt btn_wrap ">
+				<a href="#" class="main_btn scroll_bot">
+					<span class="txt">Обсудить условия сотрудничества <i class="fa fa-chevron-right"></i></span>
+					<span class="anim_bl"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="map_block" class="abs_bl">
+		<div  id="moscow" class="cont_wrap">
+			<section id="contactsMap">
+				<div class='address_bl'>
+					<div class="text_wrap">
+						<p class="main_tit pink_text">ОТДЕЛ ПО РАБОТЕ <br> С ПРОФЕССИОНАЛАМИ </p>
+						<div class="contact_wrap">
+							<p class="line">
+								<span class="in_bl left_txt">
+								Адрес 
+								</span>
+								<span class="in_bl">Ул. Большая Тульская, 10, стр. 9</span>
+							</p>
+							<p class="line">
+								<span class="in_bl left_txt">
+								Телефон 
+								</span>
+								<span class="in_bl">+7(495) 540-58-46</span>
+							</p>
+							<p class="line">
+								<span class="in_bl left_txt">
+								Эл. почта 
+								</span>
+								<a href="mailto:pro@rehau.discount" class="in_bl">pro@rehau.discount</a>
+							</p>
+						</div>
+						<p class="more_tit pink_text">Часы работы</p>
+						<p >В будни: 10:00 – 19:00</p>
+						<p class="text">В выходные и праздники: 10:00 – 16:00</p>
+						<p class="more_tit pink_text">Сотрудники</p>
+					</div>
+					<div class="staff_bl clearfix">
+						<div class="icon"> 
+							<span class="wrap_top"></span>
+							<div class="pop_text">
+								<p class="name">Савостина Елена Дмитриевна</p>
+								<p class="office">Менеджер офиса продаж</p>
+							</div>
+							<img src="images/staff4.jpg" alt="">
+						</div>
+						<div class="icon">
+							<span class="wrap_top"></span>
+							<div class="pop_text">
+								<p class="name">Клюкин Михаил Олегович</p>
+								<p class="office">Директор офиса продаж</p>
+							</div>
+							<img src="images/staff5.jpg" alt="">
+						</div>
+						<div class="icon">
+							<span class="wrap_top"></span>
+							<div class="pop_text">
+								<p class="name">Лисовая Наталья Михайловна</p>
+								<p class="office">Менеджер офиса продаж</p>
+							</div>
+							<img src="images/staff6.png" alt="">
+						</div>
+					</div>
+					<div class='pink_bl'>
+						<p class="more_tit">Центральный офис продаж</p>
+						<div class="contact_wrap">
+							<p class="line">
+								<span class="in_bl left_txt">
+								Телефон 
+								</span>
+								<span class="in_bl">+7(495) 540-58-34</span>
+							</p>
+							<p class="line">
+								<span class="in_bl left_txt">
+								Эл. почта 
+								</span>
+								<a href="mailto:sale@rehau.discount" class="in_bl">sale@rehau.discount</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+			  <script>
+			   function initialize() {
+			    var myLatlng = new google.maps.LatLng(55.678060, 37.512684);
+			    var mapOptions = {
+			     zoom: 16,
+			     center: myLatlng,
+			     scrollwheel: false,
+			     styles:
+			      [
+			       {
+			        stylers:
+			         [
+			          { hue: "#b4b4b4" },
+			          { saturation: -95 }
+			         ]
+			       }
+			      ]
+			    }
+			    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+			    var marker = new google.maps.Marker({
+			     position: myLatlng,
+			     map: map,
+			     icon: 'images/marker.png',
+			     title: 'My Map'
+			    });
+			   }
+			   google.maps.event.addDomListener(window, 'load', initialize);
+			  </script>
+			  <div class="map"><div id="map-canvas"></div></div>
+			  <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.8148165853736!2d37.51251260979044!3d55.6780403642224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cffa4c0cf11%3A0xb96df050dc36d178!2z0L_RgC4g0JLQtdGA0L3QsNC00YHQutC-0LPQviwgMzcsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTk0MTU!5e0!3m2!1sru!2s!4v1415357273510" style="height:400px; width:100%;" frameborder="0" style="border:0"></iframe>-->
+			 </section>
+		</div>
+	</section>
+	<footer id="main_footer">
+		<div class="cont_wrap clearfix">
+			<a href="tel:+74954532384" class="footer_phone l_bl">
+				<span class="icon in_bl"></span>
+				<span class="in_bl">+7 495 540 58 34 – Центральный офис продаж</span>
+			</a>
+			<div class="copy r_bl">
+				&copy; 2015 Rehau Доступное качество
+			</div>
+		</div>
+	</footer>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
